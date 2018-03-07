@@ -1,0 +1,175 @@
+.jumbotron {
+    color: white;
+}
+
+section {
+    background-image: url("images/music_backdrop.jpg");
+    background-color: #cccccc;
+ }
+
+drake {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.btn-primary {
+    background-color: #000000;
+    border-radius: 50px;
+    font-weight: bold;
+    width: 150px;
+    height: 150px;
+}
+
+.navLeft {
+    display: inline-block;
+    text-align: left;
+    font-family: "Arial", sans-serif;
+}
+
+.navCenter {
+    display: inline-block;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+}
+
+.navRight {
+    display: inline-block;
+    text-align: right;
+    float: right;
+    padding-top: 10px;
+    font-family: "Arial", sans-serif;
+}
+
+.logo {
+    background: #96a0a0;
+    color: white;
+    font-size: 28px;
+    height: 100%;
+    padding: 10px 20px;
+    font-family: "Times New Roman", Times, sans-serif;
+    font-weight: bold;
+    
+}
+
+.navWrapper {
+    background-color: white;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-bottom: 20px;
+    border-width: .2rem;
+    align-content: center;
+    justify-content: center;
+}
+
+.title {
+    color: #000000;
+    font-family: "Times New Roman", Times, sans-serif;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    font-size: 12px;
+    font-family: "Arial", sans-serif;
+    margin-bottom: 20px;
+}
+
+.lattitudeContent {
+    height: 700px;
+}
+
+.comparisonContent {
+    background-color: white;
+}
+
+.dataContent {
+    background-color: white;
+}
+
+.rowWrapper {
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-bottom: 20px;
+    border-width: .2rem;
+}
+
+.latImg {
+    height: 200px;
+    float: left;
+}
+
+.visualizationContent {
+    width: 100%;
+    height: 700px;
+}
+
+.vizbarimages {
+    width: 100%;
+    margin-right: 20px;
+}
+
+.vizbarimages {
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.viztitle {
+    color: #0cada6;
+    font-family: "Times New Roman", Times, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.vizpages {
+    height: 400px;
+}
+
+section {
+    background-color: white;
+    padding: 1em;
+    align-content: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+@media (max-width: 480px) {
+    
+    .navLeft {
+        display: inline-block;
+        text-align: left;
+        font-family: "Arial", sans-serif;
+    }
+    
+    .navRight {
+        display: inline-block;
+        text-align: right;
+        float: right;
+        padding-top: 10px;
+        font-family: "Arial", sans-serif;
+    }
+    
+    .logo {
+        background: #0cada6;
+        color: white;
+        font-size: 28px;
+        height: 100%;
+        padding: 10px 20px;
+        font-family: "Times New Roman", Times, sans-serif;
+        font-weight: bold;
+        
+    }
+    
+    .navWrapper {
+        background-color: white;
+        padding-right: 50px;
+        padding-left: 50px;
+        margin-bottom: 20px;
+        border-width: .2rem;
+        align-content: center;
+        justify-content: center;
+    }
+} 
