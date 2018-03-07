@@ -88,7 +88,7 @@ track_list =[
     {"artist": "The Yesteryears", "title": "Let It Be", "genre": "rock"},
     {"artist": "Boston", "title": "More Than a Feeling", "genre": "rock"},
     {"artist": "Pink Floyd", "title": "Another Brick in the Wall, Pt. 2", "genre": "rock"},
-    {"artist": "John Lennon", "title": "Imagine", "genre": "rock"},
+    {"artist": "John Lennon", "title": "Imagine", "genre": "rock"}
     {"artist": "The Rolling Stones", "title": "(I Can't Get No) Satisfaction", "genre": "rock"},
     {"artist": "Queen", "title": "We Will Rock You", "genre": "rock"},
     {"artist": "Lynyrd Skynyrd", "title": "Free Bird", "genre": "rock"},
