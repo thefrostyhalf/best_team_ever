@@ -1,3 +1,18 @@
+// Init function to generate dropdrown items and fetch songs and genres
+function init() {
+    var queryURL = "/song_data";
+    d3.json(queryURL, function (error, response) {
+        if (error) return console.warn(error);
+        for (var i = 0; i < response.length; i++) {
+            var select = document.getElementById('selDataset');
+            option = document.createElement('option');
+            option.value = response[i]; 
+            option.text = response[i];
+            select.appendChild(option);
+        }
+    });
+}
+init();
 //  Variable linked to the lyrics, this should be linked to the lyric key / variable of the database
 var lyric_test = "Another night, another dream but always you It's like a vision of love that seems to be true Another night another dream but always you In the night I dream of love so true  Just another night, another vision of love You feel joy, you feel pain, 'cuz nothing will be the same Just another night is all that it takes To understand the difference between lovers and fakes  So baby, I talk talk, I talk to you In the night in your dream of love so true I talk talk, I talk to you In the night in your dream of love so true  In the night, in my dreams, I'm in love with you 'Cuz you talk to me like lovers do I feel joy, I feel pain, 'cuz it's still the same When the night is gone I'll be alone  ...  ";
 
