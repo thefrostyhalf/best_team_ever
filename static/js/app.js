@@ -116,12 +116,11 @@ function updateCloud(selection) {
         var text_keys = Object.keys(display);
         var size_values = Object.values(display);
         for (var i = 0; i < text_keys.length; i++) {
-
+            var size = size_values[i];
             frequency_list.push({
                 "text":  text_keys[i],
-                "size": size_values[i]*10 // Multiplied by 10 here to increase the size of word cloud, this could be changed depending on how big you wish the word cloud to be
+                "size": Math.min(90, Math.floor(Math.log(size)*10) + 10)
             });
-        
         };
         console.log(frequency_list)
         d3.layout.cloud().size([800, 300])
