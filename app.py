@@ -13,15 +13,25 @@ def index():
 
 @app.route("/song_data")
 def songs_genes():
-    song_list =  (db.song_data.find(projection = { 'title': True, 'genre': True }))
+    song_list =  (db.song_data.find(projection = { 'title': True, 'genre': True, 'lyrics': True }))
     options = []
     for song in song_list:
-        options.append(song['title'])
-        if song['genre'] not in options:
-            options.append(song['genre'])
+        if song['lyrics'] != '':  
+            options.append(song['title'])
+            if song['genre'] not in options:
+                options.append(song['genre'])
     options.sort()
     return jsonify(options)
 
+@app.route('/lyrics/<selection>')
+def lyrics(selection):
+    selected_lyrics =  (db.song_data.find({ '$or': [ { 'title': selection }, { 'genre': selection } ] }, projection = { 'lyrics': True }))
+    lyrics = []
+    for item in selected_lyrics:
+        lyrics.append(item['lyrics'])
+    lyric_string = ' '.join(lyrics)
+    print(lyric_string)
+    return jsonify(lyric_string)
 
 @app.route("/genre_song.html")
 def genre_song():
