@@ -3,33 +3,97 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Sentiment Analysis</title>
+  <title>Genre and Song Analysis</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.3/d3.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-        <a class="navbar-brand" href="index.html">Home</a>
+  <header class="headerbar">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          <a class="navbar-brand" href="index.html">Home</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="rightnavbar collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="genre_song.html">Charts by Genre and Song<span class="sr-only">(current)</span></a></li>
+            <li><a class="page-scroll" href="sentiment.html">Sentiment Analysis</a></li>
+            <li><a class="page-scroll" href="word_analysis.html">Word Analysis</a></li>
+        </div>
+
+      <div><h1>You're on the Genre and Song Analysis Page!</h1></div>
+      
+      <h2>Pop Music Analysis</h2>
+    <select id="selDataset" onchange="getData();">
+        <option value="dataset1">Lyric Count</option>
+        <option value="dataset2">Unique Word Count </option>
+        <option value="dataset3">Lexical Diversity</option>
+    </select>
+
+    <div id="pop_bar"></div>
+
+    <script src="app_pop.js"></script>
+
+    <h2>Country Music Analysis</h2>
+    <select id="selDataset" onchange="getData();">
+        <option value="dataset1">Lyric Count</option>
+        <option value="dataset2">Unique Word Count </option>
+        <option value="dataset3">Lexical Diversity</option>
+    </select>
+
+    <div id="country_bar"></div>
+
+    <script src="app_country.js"></script>
+
+    <h2>Hip Hop Music Analysis</h2>
+    <select id="selDataset" onchange="getData();">
+        <option value="dataset1">Lyric Count</option>
+        <option value="dataset2">Unique Word Count </option>
+        <option value="dataset3">Lexical Diversity</option>
+    </select>
+
+    <div id="hiphop_bar"></div>
+
+    <script src="app_hiphop.js"></script>
+
+    <h2>Rock Music Analysis</h2>
+    <select id="selDataset" onchange="getData();">
+        <option value="dataset1">Lyric Count</option>
+        <option value="dataset2">Unique Word Count </option>
+        <option value="dataset3">Lexical Diversity</option>
+    </select>
+
+    <div id="rock_bar"></div>
+
+    <script src="app_rock.js"></script>
+
+    <h2>Alternative Music Analysis</h2>
+    <select id="selDataset" onchange="getData();">
+        <option value="dataset1">Lyric Count</option>
+        <option value="dataset2">Unique Word Count </option>
+        <option value="dataset3">Lexical Diversity</option>
+    </select>
+
+    <div id="alt_bar"></div>
+
+    <script src="app_alt.js"></script>
+
       </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="genre_song.html">Charts by Genre and Song<span class="sr-only">(current)</span></a></li>
-          <li><a href="sentiment.html">Sentiment Analysis</a></li>
-          <li><a href="word_analysis.html">Word Analysis</a></li>
-    </div>
-    <div><h1>You're on the Genre and Song Analysis Page!</h1></div>
-
+  </header>
 </body>
 
 </html>
