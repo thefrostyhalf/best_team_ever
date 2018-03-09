@@ -24,19 +24,19 @@ function init() {
         var layout = {
             // title: "Lyric Count",
             height: 800,
-            width: 800,
+            width: 1000,
             margin: {
                 b:300,
             }
             
         };
     
-        Plotly.plot("bar", data, layout);
+        Plotly.plot("country_bar", data, layout);
 
     });
 }
 
-function updatePlotly(newx, newy, newtitle) {
+function updatePlotly_country(newx, newy, newtitle) {
     // Update the pie chart with the newdata array
     var $bar = document.getElementById("country_bar");
     Plotly.restyle($bar, "x", [newx]);
@@ -45,12 +45,12 @@ function updatePlotly(newx, newy, newtitle) {
 }
 
 // This function will get called from the dropdown event handler.
-function getData() {
+function getData_country() {
     var y = [];
     var x = [];
     var title = [];
     // Retrieve the value of the dropdown menu
-    var dataset = document.getElementById('selDataset').value;
+    var dataset = document.getElementById('selDataset_country').value;
 
     // Select data array (YOUR CHOICE) depending on the value
     // of the dropdown menu.
@@ -83,7 +83,7 @@ function getData() {
 
     // Update plot with new data
     console.log('end', y)
-    updatePlotly(x, y, title);
+    updatePlotly_country(x, y, title);
 }
 
 init();
