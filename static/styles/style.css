@@ -1,0 +1,149 @@
+
+.container {
+    background-image: url("images/indexwallpaper.jpg");
+    background-size: 100%;
+    /* position: absolute; 
+    width: 0; 
+    height: 0; */
+    color: white;
+
+}
+.btn-primary{
+    background-color: black;
+    color: white;
+}
+.navbar-default {
+    /* background-color: rgb(76, 77, 73); */
+    background-color: rgb(148, 150, 143);
+    border-color: rgba(34, 34, 34, 0.05);
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.navbar-default .navbar-header .navbar-brand {
+    color: #222;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 700;
+    text-transform: uppercase;
+}
+
+.navbar-default .navbar-header .navbar-brand:hover,
+.navbar-default .navbar-header .navbar-brand:focus {
+    /* color: #13eccf; */
+    color: #e8ec13;
+    
+}
+
+.navbar-default .navbar-header .navbar-toggle {
+    font-weight: 700;
+    font-size: 12px;
+    color: #222222;
+    text-transform: uppercase;
+}
+
+.navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+a {
+    transition: all 0.35s;
+    color: #13eccf;
+  }
+
+a:hover,
+a:focus {
+    color: #222;
+  }
+
+.navbar-brand {
+    float: left;
+    margin: 0;
+}
+
+.navbar navbar-default navbar-fixed-top {
+    background-color: black;
+}
+
+.navbar-default .nav > li > a,
+.navbar-default .nav > li > a:focus {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    color: #222222;
+}
+
+.navbar-default .nav > li > a:hover,
+.navbar-default .nav > li > a:focus:hover {
+    color: #e8ec13;
+}
+
+.navbar-default .nav > li.active > a,
+.navbar-default .nav > li.active > a:focus {
+    color: #13eccf;
+    background-color: rgba(255, 255, 255, 0.24);
+}
+
+.navbar-default .nav > li.active > a:hover,
+.navbar-default .nav > li.active > a:focus:hover {
+    background-color: rgba(255, 255, 255, 0.24);
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+.pop_title {
+    background-color: transparent;
+    background-image: url("images/popmusic.jpg");
+    background-position: center center, center top;
+    background-repeat: repeat, no-repeat;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.country_title {
+    background-color: transparent;
+    background-image: url("images/countrymusic.jpg");
+    background-position: center center, center top;
+    background-repeat: no-repeat;
+    background-size: 100%, 10%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.hiphop_title {
+    background-color: transparent;
+    background-image: url("images/hiphop.jpg");
+    background-position: center center, center top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.rock_title {
+    background-color: transparent;
+    background-image: url("images/rockmusic.jpeg");
+    background-position: center center, center top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.alt_title {
+    background-color: transparent;
+    background-image: url("images/altmusic.jpg");
+    background-position: center center, center top;
+    background-repeat: repeat, no-repeat;
+    /* background-size: 100%; */
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
