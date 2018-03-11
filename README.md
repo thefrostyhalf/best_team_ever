@@ -1,5 +1,7 @@
 # best_team_ever
 
+Music Genre Lyric Analysis by Jenny, Chelan, Jackie, and Melvin
+
 OVERVIEW
 
 1.	Project Background and Description
